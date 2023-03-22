@@ -27,3 +27,30 @@ Content-Type: application/json
   "active": 315,
   "deaths": 8
 }
+
+###
+
+GET http://localhost:3000/districts/322/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc5NDkzNTA4fQ.DVY5Xit_CQJr3fx7j6kwfzAmWGcVMece78vybNpjzOs
+
+###
+DELETE http://localhost:3000/districts/322/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc5NDkzNTA4fQ.DVY5Xit_CQJr3fx7j6kwfzAmWGcVMece78vybNpjzOs
+
+###
+PUT http://localhost:3000/districts/322/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc5NTAzMzEyfQ.xS23W6XHODK6k5VKuVyFGmJNkzIoab-SOFMj30GMdLU
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+GET http://localhost:3000/states/32/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc5NTAzMzEyfQ.xS23W6XHODK6k5VKuVyFGmJNkzIoab-SOFMj30GMdLU
